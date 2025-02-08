@@ -3,9 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Password Field</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="password-card">
+        <h2>Enter your password</h2>
+        <div class="user-info">
+          <img src="https://i.pravatar.cc/300" alt="" class="avatar" />
+          <div class="user-details">
+            <p class="account-type">Business Account</p>
+            <p class="user-name">Sarah Bills</p>
+          </div>
+        </div>
+        <label for="password">Password</label>
+        <div class="password-input-weapper">
+          <input type="password" id="password" placeholder="........." />
+          <span class="toogle-password-visibility">
+            <i class="fa-regular fa-eye-slash"></i>
+          </span>
+        </div>
+        <div class="options">
+          <label class="checkbox-container">
+            <input type="checkbox" id="staySignedIn" />
+            <span class="checkmark"></span>
+            Stay signed in
+          </label>
+          <a href="" class="reset-password">Reset password</a>
+        </div>
+        <button type="submit" class="continue-btn">Continue</button>
+      </div>
+    </div>
+  </body>
 </html>
-d
