@@ -17,6 +17,11 @@ body {
   line-height: 1.2;
 }
 
+img {
+  width: 20px;
+  height: 20px;
+}
+
 .btn-primary {
   display: block;
   padding: 1rem 2rem;
@@ -26,6 +31,15 @@ body {
   border-radius: 2px;
   box-shadow: 2px 2px 5px rgb(15, 89, 139);
   cursor: pointer;
+}
+
+.btn-secondary {
+  display: block;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 3px;
+  font-size: 16px;
 }
 
 .container {
@@ -67,7 +81,7 @@ margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .container .form .actions h3 {
@@ -81,22 +95,49 @@ margin-bottom: 1rem;
   cursor: pointer;
 }
 
-.container .line::before {
-  content: '';
+.container .form .line {
   display: block;
-  width: 80%;
-  height: 5px;
-  border: 1px solid #333;
-  padding: 1rem 2rem;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 2rem;
 }
 
+.container .form .text  {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
 
+.container .form .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.container .form .buttons .btn-secondary i {
+  color: blue;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.container .text {
+  text-align: center;
+}
+
+.container .text span {
+  color: green;
+  text-decoration: underline;
+}
 
 .container .right {
   background: url('./wesley-tingey-9-OCsKoyQlk-unsplash.jpg') center / cover no-repeat;
   width: 40%;
   height: 100%;
-  position: relative;
 }
+
+
+
+
 
 
