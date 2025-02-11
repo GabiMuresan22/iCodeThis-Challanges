@@ -12,6 +12,7 @@ body {
   margin: 0;
   background-color: #f4f4f4;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -22,10 +23,21 @@ img {
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 90%;
+  width: 600px;
+}
+
+.btn {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #aaa;
+  color: #fff;
 }
 
 /* Password Card */
@@ -35,11 +47,10 @@ img {
   padding: 3rem;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
 }
 
 .container .password-card h2 {
-  text-align: center;
+  text-align: left;
   margin-bottom: 2rem;
   color: #333;
 }
@@ -60,7 +71,6 @@ img {
 }
 
 .container .password-card .user-details {
-  margin: 0;
   color: #333;
 }
 
@@ -78,15 +88,16 @@ label {
   font-weight: bold;
 }
 
-.password-input-wrapper {
+.container .password-input-wrapper {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 #password {
-  width: 70%;
+  width: 90%;
   padding: 0.7rem;
   border: 1px solid #333;
   border-radius: 5px;
@@ -96,6 +107,55 @@ label {
 
 #password::placeholder {
   color: #aaa;
+  font-size: 30px;
+}
+
+.container .options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.container .options .checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.container .options .checkbox-container .circle {
+  border: 1px solid #333;
+  background-color: #aaa;
+  width: 60px;
+  height: 30px;
+  border-radius: 50px;
+  position: relative;
+  padding: 2px;
+}
+
+.container .options .checkbox-container .circle::after {
+  content: '';
+  border: 1px solid #333;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.container .options .btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+}
+
+.container .reset-password {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 
