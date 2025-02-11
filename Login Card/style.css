@@ -7,9 +7,96 @@
 }
 
 body {
-  background-color: #b9b8b8;
+  background-color: #e7e5e5;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  line-height: 1.2;
+}
+
+.btn-primary {
+  display: block;
+  padding: 1rem 2rem;
+  background-color: rgb(15, 89, 139);
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px rgb(15, 89, 139);
+  cursor: pointer;
+}
+
+.container {
+  width: 800px;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Roboto', sans-serif;
+  background-color: antiquewhite;
 }
+
+.container .left {
+  background-color: #fff;
+  width: 60%;
+  height: 100%;
+  padding: 2rem 3rem;
+}
+
+.container .left h1 {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.container .left p {
+font-size: 1rem;
+margin-bottom: 1rem;
+}
+
+.container .form input {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  border: 1px solid #969595;
+  margin-bottom: 1rem;
+}
+
+.container .form .actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.container .form .actions h3 {
+  color: green;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.container .form .actions h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container .line::before {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 5px;
+  border: 1px solid #333;
+  padding: 1rem 2rem;
+}
+
+
+
+.container .right {
+  background: url('./wesley-tingey-9-OCsKoyQlk-unsplash.jpg') center / cover no-repeat;
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+
