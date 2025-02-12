@@ -35,7 +35,7 @@ body {
   font-size: 20px;
   border-radius: 5px;
   box-shadow: 0px 5px 5px rgb(9, 118, 241);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .btn-secondary {
@@ -105,10 +105,31 @@ padding: 2rem 0;
   color: #8d8b8b;
 }
 
+.container .right .stock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.container .right .stock .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.container .right .stock .text {
+  margin-left: 25px;
+}
+
 .container .right .buttons {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  margin-top: 15px;
+  margin-top: 25px;
 }
