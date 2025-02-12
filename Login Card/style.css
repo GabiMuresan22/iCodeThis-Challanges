@@ -96,6 +96,10 @@ margin-bottom: 1rem;
   cursor: pointer;
 }
 
+.container .form .actions i {
+  margin-left: 5px;
+}
+
 .container .form .line {
   display: block;
   width: 100%;
