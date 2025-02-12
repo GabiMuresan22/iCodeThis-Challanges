@@ -134,6 +134,25 @@ margin-bottom: 1rem;
   background: url('./wesley-tingey-9-OCsKoyQlk-unsplash.jpg') center / cover no-repeat;
   width: 40%;
   height: 100%;
+  position: relative;
+}
+
+.container .right .circle {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .right .circle i {
+  color: #fff;
+  font-size: 15px;
 }
 
 
