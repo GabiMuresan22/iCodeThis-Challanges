@@ -58,3 +58,23 @@ padding: 2rem 0;
   margin-bottom: 20px;
   font-family: 'Roboto', sans-serif;
 }
+
+.container .right .price .normal-price {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: line-through;
+  font-size: 18px;
+}
+
+.container .right .price .price-offer {
+  display: block;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container .right .price .offer {
+  display: block;
+  margin-bottom: 20px;
+  color: #8d8b8b;
+}
