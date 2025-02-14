@@ -16,20 +16,24 @@ body {
 
 .container {
   width: 300px;
-  height: 600px;
+  height: 650px;
   border-radius: 10px;
   background: #fff;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
+  z-index: 5;
+  overflow: hidden;
 }
 
 .container .header img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  z-index: 10;
 }
 
 .container h3 {
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .container .header {
@@ -38,7 +42,28 @@ body {
   justify-content: space-between;
   gap: 1rem;
   margin-bottom: 2rem;
-  padding: 2rem 0rem;
+  padding: 2rem;
+  position: relative;
+  z-index: 100;
+}
+
+.container .header::after {
+  content: "";
+  width: 350px;
+  height: 110%;
+  background-color: rgba(0, 0, 240, 0.6);
+  position: absolute;
+  top: -3.8rem;
+  left: -2rem;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 80px;
+  transform: rotate(-15deg);
+  padding: 1rem;
+}
+
+.container .header .name {
+  z-index: 15;
+  color: #fff;
 }
 
 .container .btn {
@@ -49,7 +74,7 @@ body {
   background-color: rgba(0, 0, 240, 0.6);
   border: none;
   border-radius: 10px;
-  margin: 2rem auto;
+  margin: 2.5rem auto;
   font-size: 16px;
 }
 
@@ -57,17 +82,36 @@ body {
 margin-right: 0.5rem;
 }
 
+.container .menu-item {
+  margin: 0;
+  padding: 0;
+}
+
 .container .menu-item .item {
   display: flex;
   align-items: center;
   gap: 1rem;
   color: rgb(168, 168, 168);
-  margin: 1rem 0 2rem 0;
-  font-size: 1rem;
+  margin: 1rem 0 2rem 0rem;
+  padding:  0 2rem;
+  font-size: 1.2rem;
 }
 
 .container .menu-item .item.live-session {
   color: rgba(0, 0, 240, 0.6);
+  border-left: 3px solid rgba(0, 0, 240, 0.6);
+}
+
+.container .close-btn {
+  position: relative;
+}
+
+.container .close-btn i {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #e5ecf1;
 }
 
 
