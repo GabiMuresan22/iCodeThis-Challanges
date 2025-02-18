@@ -11,5 +11,15 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #e5ecf1;
+  background-color: #d3e9f8;
+}
+
+.container {
+  width: 400px;
+  height: 600px;
+  margin: auto;
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 5px 5px 10px rgb(193, 193, 228);
+  border-radius: 10px;
 }
