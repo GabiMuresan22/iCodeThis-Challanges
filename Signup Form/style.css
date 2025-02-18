@@ -22,4 +22,35 @@ body {
   padding: 2rem;
   box-shadow: 5px 5px 10px rgb(193, 193, 228);
   border-radius: 10px;
+  text-align: center;
+}
+
+.container h1 {
+ font-weight: 700;
+ font-size: 2rem;
+ margin-bottom: 20px;
+}
+
+.container p {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #9d9da0;
+}
+
+.container .btn-primary {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgba(56, 56, 235, 0.993);
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.container .btn-primary:focus {
+  outline: none;
 }
