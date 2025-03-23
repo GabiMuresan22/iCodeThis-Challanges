@@ -24,3 +24,19 @@ body {
   border-radius: 10px;
   text-align: center;
 }
+
+.container h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.container h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.container .form {
+  margin-top: 1.5rem;
+}
