@@ -17,7 +17,6 @@ body {
 
 .container {
   width: 600px;
-  height: 400px;
   background-color: #f5f5f5;
   padding: 2rem;
   box-shadow: 5px 5px 5px lightblue;
@@ -39,4 +38,40 @@ body {
 
 .container .form {
   margin-top: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.container .form input[type=email] {
+padding: 0.6rem 0.8rem;
+border: 1px solid gray;
+font-size: 0.8rem;
+margin-right: 1rem;
+width: 70%;
+}
+
+.container .form .btn {
+  background-color: rgb(25, 174, 219);
+  padding: 0.6rem 0.8rem;
+  color: #f5f5f5;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.container .form .btn span {
+  margin-left: 1rem;
+}
+
+.container .checkbox {
+  text-align: left;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
